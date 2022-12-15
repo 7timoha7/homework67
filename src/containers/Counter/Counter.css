@@ -1,0 +1,39 @@
+.numberBox {
+    border: 5px solid black;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px;
+    background: deepskyblue;
+}
+
+.numberBtn {
+    display: block;
+    width: 95px;
+    background: orange;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bigBox {
+    border: 2px solid deepskyblue;
+    display: inline-block;
+    padding: 5px;
+    background: gray;
+    margin: 50px 0 0 50px;
+}
+
+.displayBox {
+    border: 5px solid black;
+    margin-bottom: 5px;
+    padding: 5px;
+    height: 100px;
+}
+
+.passTrue {
+    border: 5px solid black;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: chartreuse;
+}
