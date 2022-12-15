@@ -4,24 +4,26 @@
     display: flex;
     flex-wrap: wrap;
     width: 330px;
-    background: deepskyblue;
+    background: rgba(37, 43, 125, 0.55);
 }
 
 .numberBtn {
     display: block;
     width: 95px;
-    background: orange;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(94, 239, 244));
     margin: 5px;
     font-size: 18px;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .bigBox {
-    border: 2px solid deepskyblue;
+    border: 10px solid #0adcd4;
     display: inline-block;
-    padding: 5px;
+    padding: 15px;
     background: gray;
     margin: 50px 0 0 50px;
+    border-radius: 10px;
 }
 
 .displayBox {
@@ -29,6 +31,9 @@
     margin-bottom: 5px;
     padding: 5px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .passTrue {
@@ -36,4 +41,13 @@
     margin-bottom: 5px;
     padding: 5px;
     background: chartreuse;
+    height: 100px;
+}
+
+.passFalse {
+    border: 5px solid black;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #ff1d1d;
+    height: 100px;
 }

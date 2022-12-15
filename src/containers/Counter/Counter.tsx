@@ -9,7 +9,7 @@ const Counter = () => {
   const counterValue = useSelector((state: RootState) =>
     state.counter.value
   );
-  const counterAsterisks = useSelector((state:RootState)=>
+  const counterAsterisks = useSelector((state: RootState) =>
     state.counter.asterisks
   );
 
@@ -20,6 +20,12 @@ const Counter = () => {
       return (
         <div className="passTrue">
           <h1>Pass is TRUE! Come in!</h1>
+        </div>
+      )
+    } else if (counterValue.length === 4 && counterValue !== pass) {
+      return (
+        <div className="passFalse">
+          <h1>Pass is False! Try again!</h1>
         </div>
       )
     } else {
