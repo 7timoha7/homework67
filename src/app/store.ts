@@ -1,9 +1,11 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {counterReducer} from "../containers/Counter/counterSlice";
+import {intercomReducer} from "../containers/Intercom/intercomSlice";
+import {calculatorReducer} from "../containers/Calculator/calculatorSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    intercom: intercomReducer,
+    calculator: calculatorReducer,
   }
 })
 

@@ -1,0 +1,10 @@
+.calkBox {
+    display: flex;
+}
+
+.calkBoxMini {
+    border: 5px solid black;
+    padding: 10px;
+    background: rgba(37, 43, 125, 0.55);
+    margin-left: 5px;
+}

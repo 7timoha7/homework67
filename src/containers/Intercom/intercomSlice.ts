@@ -1,17 +1,17 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
-interface CounterState {
+interface IntercomState {
   value: string;
   asterisks: string
 }
 
-const initialState: CounterState = {
+const initialState: IntercomState = {
   value: '',
   asterisks: '',
 }
 
-export const counterSlice = createSlice({
-  name: 'counter',
+export const intercomSlice = createSlice({
+  name: 'intercom',
   initialState,
   reducers: {
     btnDelete: state => {
@@ -33,5 +33,5 @@ export const counterSlice = createSlice({
   }
 })
 
-export const counterReducer = counterSlice.reducer;
-export const {btnDelete, btnNumber, btnDeleteOne} = counterSlice.actions;
+export const intercomReducer = intercomSlice.reducer;
+export const {btnDelete, btnNumber, btnDeleteOne} = intercomSlice.actions;

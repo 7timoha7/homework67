@@ -1,28 +1,28 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../app/store";
-import "./Counter.css"
-import {btnDelete, btnDeleteOne, btnNumber} from "./counterSlice";
+import "./Intercom.css"
+import {btnDelete, btnDeleteOne, btnNumber} from "./intercomSlice";
 
-const Counter = () => {
+const Intercom = () => {
   const dispatch = useDispatch();
-  const counterValue = useSelector((state: RootState) =>
-    state.counter.value
+  const intercomValue = useSelector((state: RootState) =>
+    state.intercom.value
   );
-  const counterAsterisks = useSelector((state: RootState) =>
-    state.counter.asterisks
+  const intercomAsterisks = useSelector((state: RootState) =>
+    state.intercom.asterisks
   );
 
   const pass = '2846';
 
   const passTrue = () => {
-    if (counterValue === pass) {
+    if (intercomValue === pass) {
       return (
         <div className="passTrue">
           <h1>Pass is TRUE! Come in!</h1>
         </div>
       )
-    } else if (counterValue.length === 4 && counterValue !== pass) {
+    } else if (intercomValue.length === 4 && intercomValue !== pass) {
       return (
         <div className="passFalse">
           <h1>Pass is False! Try again!</h1>
@@ -31,7 +31,7 @@ const Counter = () => {
     } else {
       return (
         <div className="displayBox">
-          <h1>{counterAsterisks}</h1>
+          <h1>{intercomAsterisks}</h1>
         </div>
       )
     }
@@ -58,4 +58,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default Intercom;
